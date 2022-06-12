@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { DarkLayout } from "../components/layouts/DarkLayout";
 import { MainLayout } from "../components/layouts/MainLayout";
 
 export default function Home() {
