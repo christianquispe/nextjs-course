@@ -1,6 +1,8 @@
 import { MainLayout } from "../../components/layouts/MainLayout";
 
-const PricingPage = () => {
+import { NextPageWithLayout } from "../_app";
+
+const PricingPage: NextPageWithLayout = () => {
   return (
     <>
       <h1 className="title">Pricing Page</h1>

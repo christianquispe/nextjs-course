@@ -1,8 +1,11 @@
 import Link from "next/link";
+
 import { DarkLayout } from "../components/layouts/DarkLayout";
 import { MainLayout } from "../components/layouts/MainLayout";
 
-export default function AboutPage() {
+import { NextPageWithLayout } from "./_app";
+
+const AboutPage: NextPageWithLayout = () => {
   return (
     <MainLayout>
       <h1 className="title">
@@ -13,7 +16,7 @@ export default function AboutPage() {
       </h1>
     </MainLayout>
   );
-}
+};
 
 AboutPage.getLayout = function getLayout(page) {
   return (
@@ -22,3 +25,5 @@ AboutPage.getLayout = function getLayout(page) {
     </MainLayout>
   );
 };
+
+export default AboutPage;
